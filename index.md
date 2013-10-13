@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: Nightfeather's github page
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
