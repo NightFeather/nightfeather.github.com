@@ -1,3 +1,5 @@
+exclude: ["README.md"]
+
 title : NightFeather's test
 
 tagline: 
