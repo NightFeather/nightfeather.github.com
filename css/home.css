@@ -1,0 +1,31 @@
+body {
+        text-align:center; 
+        background-color:#dddddd;
+}
+input {
+       border-radius:5px 10px; 
+       font-size:30px;
+       height:80px;
+       width:200px;
+       background-image:-webkit-linear-gradient(left,#eeeeee,#aaaaaa);
+       background-image:-moz-linear-gradient(left,#eeeeee,#aaaaaa);
+       border:none;
+       box-shadow:5px 5px 5px 0px #454545;
+}
+
+input:active {
+       background-image:-webkit-linear-gradient(left,#eeeeee,#999999);
+       background-image:-moz-linear-gradient(left,#eeeeee,#999999);
+       box-shadow:inset 2px 2px 2px 2px #454545;
+}
+
+#holder {
+        margin:0% 25%;
+        width:50%;
+}
+
+h1 {
+        color:#eeeeee;
+        background-color:blue;
+        border-radius:5px 10px;
+}
