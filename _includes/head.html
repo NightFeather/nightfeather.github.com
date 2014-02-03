@@ -1,0 +1,11 @@
+<head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.css }}/general.css" />
+    <link rel="stylesheet" href="{{ site.css }}/header.css" />
+    <link rel="stylesheet" href="{{ site.css }}/footer.css" />
+    <link rel="stylesheet" href="{{ site.css }}/page.css" />
+    {% for css in page.css %}
+        <link rel="stylesheet" href="{{site.css}}/{{css}}.css" />
+    {% endfor %}
+</head>

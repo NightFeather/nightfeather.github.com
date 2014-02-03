@@ -1,12 +1,13 @@
-exclude: ["README.md"]
+exclude: [ Readme.md, pub_drafts.rb ]
+assets: /assets
+pic: /assets/pics
+css: /assets/css
+js: /assets/js
 
-title : NightFeather's test
+markdown: redcarpet
+redcarpet:
+    extensions: [ "no_intra_emphasis","tables","fenced_code_blocks","autolink","strikethrough","underline","hightlight","footnote"]
 
-tagline: 
-
-author :
-  name : NightFeather
-  email : ss900328@gmail.com
-  github : NightFeather
-
-production_url : http://nightfeather.github.com
+permalink: pretty
+paginate: 10
+paginate_path: "posts/page:num"

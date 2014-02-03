@@ -1,0 +1,19 @@
+ul.fieldset {
+    position: relative;
+    padding: 10px;
+    border:black 0.5px solid;
+    border-radius: 5px;
+}
+
+li.lengend {
+    text-align: left;
+    font-size: 20px;
+    position: absolute !important;
+    left:10px;
+    top: -16px;
+}
+li.lengend span {
+    background-color: rgba(250,255,250,1);
+    padding: 2px 5px;
+    white-space: nowrap;
+}
