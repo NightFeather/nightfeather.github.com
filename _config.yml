@@ -1,4 +1,4 @@
-exclude: [ Readme.md, pub_drafts.rb ]
+exclude: [ README.md, pub_drafts.rb ]
 assets: /assets
 pic: /assets/pics
 css: /assets/css

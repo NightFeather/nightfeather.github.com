@@ -6,3 +6,6 @@
     </div>
     {% include footer.html %}
 </body>
+{% for script in page.scripts %}
+    <script src="{{ site.js }}/{{script}}.js"></script>
+{% endfor %}

@@ -3,19 +3,29 @@ layout: page
 title: 呃....?
 loc: home
 css: [ simFieldset ]
+scripts: [ github, home ]
 ---
-<ul class="posts fieldset">
-    <li class="lengend">
-        <span>Recent Posts</span>
-    </li>
-    <li class="header">
-        <span class="title">Title</span>
-        <span class="date">Date</span>
-    </li>
-{% for post in site.posts limit: 5 %}
-    <li>
-        <a class="title" href="{{ post.url }}">{{ post.title | truncate: 30 }}</a>
-        <span class="date">{{ post.date | date_to_string }}</span>
-    </li>
-{% endfor %}
-</ul>
+<section id="recent" class="fieldset">
+    <div class="lengend"><span>Recent Posts</span></div>
+    <ul class="posts">
+        <li class="header">
+            <span class="title">Title</span>
+            <span class="date">Date</span>
+        </li>
+    {% for post in site.posts limit: 5 %}
+        <li>
+            <a class="title" href="{{ post.url }}">{{ post.title | truncate: 30 }}</a>
+            <span class="date">{{ post.date | date_to_string }}</span>
+        </li>
+    {% endfor %}
+    </ul>
+</section>
+<section id="repos" class="fieldset">
+    <div class="lengend"><span>Github Repos</span></div>
+    <ul>
+        <li class="header">
+            <span class="repo">Repository Name</span>
+            <span class="update">Last Update</span>
+        </li>
+    </ul>
+</section>
