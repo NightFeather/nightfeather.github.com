@@ -11,7 +11,7 @@ loc: posts
     </li>
 {% for post in site.posts %}
     <li>
-        <a class="title" href="{{ post.url }}">{{ post.title | truncate: 30 }}</a>
+        <a class="title" href="{{ post.url }}">{{ post.title | truncate: 40 }}</a>
         <span class="date">{{ post.date | date_to_string }}</span>
     </li>
 {% endfor %}

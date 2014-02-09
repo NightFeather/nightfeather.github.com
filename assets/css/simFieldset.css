@@ -8,13 +8,13 @@
 
 .fieldset .lengend {
     text-align: left;
-    font-size: 20px;
     position: absolute !important;
     left:10px;
     top: -16px;
 }
-.lengend span {
+.lengend * {
     background-color: rgba(250,255,250,1);
     padding: 2px 5px;
     white-space: nowrap;
+    font-size: 20px;
 }
