@@ -37,9 +37,7 @@
       width: 37%; }
   .fieldset p {
     padding: 5px 10px; }
-  .fieldset p + ul {
-    padding: 5px 10px; }
-    .fieldset p + ul li {
-      width: 100%;
-      padding: 0px;
-      text-align: left; }
+  .fieldset p + ul li {
+    width: 100%;
+    padding: 0px;
+    text-align: left; }
