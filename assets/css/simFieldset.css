@@ -1,20 +1,45 @@
 .fieldset {
-    position: relative;
-    padding: 10px;
-    border:black 0.5px solid;
-    border-radius: 5px;
-    margin: 20px 0px;
-}
-
-.fieldset .lengend {
+  font-size: 20px;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border: black 0.5px solid;
+  border-radius: 5px; }
+  .fieldset .lengend {
     text-align: left;
-    position: absolute !important;
-    left:10px;
-    top: -16px;
-}
-.lengend * {
-    background-color: rgba(250,255,250,1);
-    padding: 2px 5px;
-    white-space: nowrap;
-    font-size: 20px;
-}
+    width: 100%;
+    background-color: #333;
+    color: #fafffa;
+    margin-bottom: 5px; }
+    .fieldset .lengend * {
+      padding: 10px 20px;
+      white-space: nowrap;
+      display: inline-block; }
+  .fieldset li {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    padding: 10px 0px; }
+    .fieldset li.header {
+      border-bottom: black 0.5px solid;
+      padding-bottom: 5px;
+      margin-bottom: 5px; }
+      .fieldset li.header * {
+        text-align: center !important;
+        font-size: 20px !important;
+        font-weight: 800; }
+    .fieldset li * {
+      display: inline-block; }
+    .fieldset li .two.first {
+      width: 57%; }
+    .fieldset li .two.last {
+      width: 37%; }
+  .fieldset p {
+    padding: 5px 10px; }
+  .fieldset p + ul {
+    padding: 5px 10px; }
+    .fieldset p + ul li {
+      width: 100%;
+      padding: 0;
+      text-align: left; }

@@ -5,27 +5,29 @@ loc: home
 css: [ simFieldset ]
 scripts: [ github, home ]
 ---
-<section id="recent" class="fieldset">
-    <header class="lengend"><h4>Recent Posts</h4></header>
-    <ul class="posts">
-        <li class="header">
-            <span class="title">Title</span>
-            <span class="date">Date</span>
-        </li>
-    {% for post in site.posts limit: 5 %}
-        <li>
-            <a class="title" href="{{ post.url }}">{{ post.title | truncate: 40 }}</a>
-            <span class="date">{{ post.date | date_to_string }}</span>
-        </li>
-    {% endfor %}
-    </ul>
-</section>
-<section id="repos" class="fieldset">
-    <header class="lengend"><h4>Github Repos</h4></header>
-    <ul>
-        <li class="header">
-            <span class="repo">Repository Name</span>
-            <span class="update">Last Update</span>
-        </li>
-    </ul>
-</section>
+<article id="recent">
+    <section id="posts" class="fieldset">
+        <header class="lengend"><h4>Recent Posts</h4></header>
+        <ul>
+            <li class="header">
+                <span class="title two first">Title</span>
+                <span class="date two last">Date</span>
+            </li>
+        {% for post in site.posts limit: 5 %}
+            <li>
+                <a class="title two first" href="{{ post.url }}">{{ post.title | truncate: 40 }}</a>
+                <span class="date two last">{{ post.date | date_to_string }}</span>
+            </li>
+        {% endfor %}
+        </ul>
+    </section>
+    <section id="repos" class="fieldset">
+        <header class="lengend"><h4>Github Repos</h4></header>
+        <ul>
+            <li class="header">
+                <span class="repo two first">Repository Name</span>
+                <span class="update two last">Last Update</span>
+            </li>
+        </ul>
+    </section>
+</article>
