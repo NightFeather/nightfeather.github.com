@@ -1,0 +1,63 @@
+.fieldset {
+    font-size: 20px;
+    position: relative;
+    width: 80%;
+    margin: auto ;
+    margin-top: 20px;
+    border:black 0.5px solid;
+    border-radius: 5px;
+
+    .lengend {
+        text-align: left;
+        width: 100%;
+        background-color: #333;
+        color: rgba(250,255,250,1);
+        margin-bottom: 5px;
+
+        * {
+            padding: 10px 20px;
+            white-space: nowrap;
+            display: inline-block;
+        }
+
+    }
+
+    li {
+        width: 95%;
+        margin: auto;
+        text-align: center;
+        padding: 10px 0px;
+        &.header {
+            border-bottom: black 0.5px solid;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            * {
+                text-align: center !important;
+                font-size: 20px !important;
+                font-weight: 800;
+            }
+        }
+
+        * { display: inline-block; }
+        .two {
+            &.first { width: 57%; }
+            &.last { width: 37%; }
+        }
+    }
+
+    p {
+        padding: 5px 10px;
+    }
+
+    p + ul {
+        padding: 5px 10px;
+        li {
+            width: 100%;
+            padding: 0px;
+            text-align: left;
+        }
+    }
+
+}
+
+

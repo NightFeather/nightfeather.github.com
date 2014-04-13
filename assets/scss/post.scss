@@ -1,0 +1,25 @@
+
+#main {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    min-height: 300px;
+    width: 80%;
+    padding: 10px 5px;
+}
+
+hr {
+    margin: 5px 0px;
+}
+
+pre {
+    margin: 5px 0px;
+    border-radius: 5px;
+    background-color: #343434;
+    color: #ddd;
+    padding: 10px;
+    box-shadow: inset 5px 5px 5px #222;
+    border:#000 0.5px solid;
+    line-height: 2em;
+}

@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+#encoding: UTF-8
+
+require 'sass'
+require 'sass/exec'
+
+(Dir["./assets/scss/*.scss"]).each do |item|
+    target = "./assets/css/" + File.basename(item,".*") + ".css"
+    puts "converting " + item + " to " + target
+    ( Sass::Exec::Scss.new ([item , target]) ).parse
+    system "git add " + target
+end
