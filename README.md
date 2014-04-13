@@ -7,3 +7,5 @@
 |-about/ -- 不知道該寫啥的關於  
 |  
 |-pub_drafts.rb -- 因為我懶得標日期(ry  
+|
+|-compile-scss -- 自動 compile scss 因為 github 不接受自訂 plugin
