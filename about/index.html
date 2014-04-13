@@ -2,4 +2,41 @@
 title: About me
 layout: page
 loc: about
+css: [ simFieldset ]
 ---
+
+<article id="about">
+    <section class="fieldset">
+        <header class="lengend"><h3>緣起</h3></header>
+        {% capture paragraph %}
+
+說到這個東西的出現呢...  
+是因為當初同學想做個工作室網站 [Candytan](http://candytan.org/ "Candytan") 而我又去湊熱鬧而開始的  
+因為不知道要怎麼弄只好自己弄一個來玩  當實驗用的吧XD
+
+        {% endcapture%}
+        {{ paragraph | markdownify }}
+    </section>
+    <section class="fieldset">
+        <header class="lengend"><h3>個人簡介</h3></header>
+        {% capture paragraph %}
+
+總之在網路上用個好像有點中二(?)的 ID : NightFeather  
+然後到處學各種奇怪的語言
+
+* 從 batch 開始 
+* 接著應該是高中剛開始課堂上的 VB  
+* 然後是進到資訊社的 C / C++ (這兩個的差異還是分不大出來....
+* 因為知道了 Google Chrome 的存在 所以也開始接觸網頁的 JS CSS HTML
+* 之後踏進 Linux 的領域開始碰 Shell Script
+* 開始寫噗浪機器人所以又加了 Ruby
+* 因為是 Linux 嘛 所以去開了網頁伺服器來玩 又碰了點 php
+* 現在把一點 sp 拿去點了 css 分支結果變成了 scss
+
+雖然說看起來好多好棒棒但是沒有一個上的了檯面 QQ  
+總之就是技能點太分散反而沒有棵技能樹點的夠深的 ( 啥鬼比喻 )
+
+        {% endcapture %}
+        {{ paragraph | markdownify }}
+    </section>
+</article>
