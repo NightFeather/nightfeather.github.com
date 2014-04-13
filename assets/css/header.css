@@ -12,6 +12,5 @@ nav.shared {
   text-align: center;
   margin-bottom: 10px;
   padding: 5px; }
-
-nav.shared * {
-  margin: 5px 10px; }
+  nav.shared * {
+    margin: 5px 10px; }
