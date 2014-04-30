@@ -1,0 +1,30 @@
+---
+layout: page
+title: 關於那些模組
+loc: posts
+css: [ simFieldset , code]
+---
+
+<article>
+<section class="fieldset">
+    <header class="lengend"><h4>CustomError</h4></header>
+    <ul>
+        <li>
+            <h3>403</h3>
+            <pre>
+<code>&lt;?php
+  global $user;
+  if ( $user->uid != 0 ) { //判斷是否已登入
+    if ( $user->uid != 1) { //判斷是否為管理員
+      print "權限不足唷wwwwww";
+    } else {
+      print $user->name . "  管理員大大你好窩wwww";
+    }
+  } else {
+  print  "先登入才有好康" ;
+  }
+?&gt;</code></pre>
+        </li>
+    </ul>
+</section>
+</article>

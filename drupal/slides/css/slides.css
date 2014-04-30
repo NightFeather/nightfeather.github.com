@@ -1,0 +1,49 @@
+section {
+    display: none;
+    position: fixed;
+    background-color: #ada;
+    width:100%;
+    height:100%;
+    text-align: center;
+}
+
+section.current {
+    display: block;
+}
+
+section div.wrap {
+    width: 80%;
+    margin: auto;
+}
+
+section h2 {
+    position: relative;
+    margin-top: 15%;
+}
+
+section h2:only-child {
+    position: relative;
+    margin-top: 25%;
+}
+
+section h2 ~ *:not(br) { 
+    margin: auto;
+    font-size: 2rem; 
+    display: block;
+}
+
+section h2 ~ .note {
+    font-size: 1.5rem;
+}
+
+section h2 ~ .sub
+{
+    font-size: 2rem;
+    text-align: right;
+}
+
+section h2 ~ ol ,
+section h2 ~ ul  {
+    width: 60%;
+    margin: auto;
+}
