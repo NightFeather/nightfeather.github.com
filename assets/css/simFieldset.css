@@ -29,7 +29,7 @@
         text-align: center !important;
         font-size: 20px !important;
         font-weight: 800; }
-    .fieldset li * {
+    .fieldset li *:not(pre) {
       display: inline-block; }
     .fieldset li .two.first {
       width: 57%; }
