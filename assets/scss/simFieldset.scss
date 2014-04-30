@@ -38,7 +38,7 @@
             }
         }
 
-        * { display: inline-block; }
+        *:not(pre) { display: inline-block; }
         .two {
             &.first { width: 57%; }
             &.last { width: 37%; }
