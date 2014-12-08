@@ -1,7 +1,7 @@
 ---
 title: 簡略搭起Drupal on Linux
 layout: post
-css: [ post ]
+css: [ post, code ]
 tags: [ drupal ]
 ---
 

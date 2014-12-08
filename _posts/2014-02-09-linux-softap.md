@@ -1,7 +1,7 @@
 ---
 title: SoftAP using hostapd &amp; dnsmasq
 layout: post
-css: [ post ]
+css: [ post, code ]
 ---
 
 總之因為今天很閒所以把之前的軟AP又搬出來弄過一遍  
@@ -55,8 +55,8 @@ css: [ post ]
         exit;
     fi
     
-    hostapdConf='/home/nightfeather/.config/hostapd/hostapd.conf'
-    dnsmasqConf='/home/nightfeather/.config/dnsmasq/dnsmasq.conf'
+    hostapdConf='${HOME}/.config/hostapd/hostapd.conf'
+    dnsmasqConf='${HOME}/.config/dnsmasq/dnsmasq.conf'
     wireless='wlan0'
     ethernet='eth0'
     

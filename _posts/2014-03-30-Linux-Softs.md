@@ -1,7 +1,7 @@
 ---
 title: Linux mint 上的常裝的東西@@
 layout: post
-css: [ post ]
+css: [ post, code ]
 tags: [ linux ]
 ---
 

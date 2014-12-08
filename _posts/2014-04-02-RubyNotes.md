@@ -1,7 +1,7 @@
 ---
 title: Ruby 筆記
 layout: post
-css: [post]
+css: [post,code]
 tag:  [ruby]
 ---
 
@@ -66,4 +66,3 @@ tag:  [ruby]
     回傳符合條件的元素集合
     select => 條件為真
     reject => 條件為偽
-
