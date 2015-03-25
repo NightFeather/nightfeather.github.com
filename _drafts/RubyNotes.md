@@ -1,12 +1,12 @@
 ---
 title: Ruby 筆記
 layout: post
-css: [post,code]
+css: [ post , code]
 tag:  [ruby]
 ---
 
 ### 總之就是聚集了各式從網路上蒐集來的東西@@ #
-
+<br />
 ### [% 的特殊用途](#percentage_sign) #
 
 ***
@@ -37,7 +37,8 @@ tag:  [ruby]
     會把包起來的字串變成 symbol
 
 ***
-
+***
+<br />
 ### [迭代操作](#iterator) #
 
 #### each #
@@ -65,8 +66,19 @@ tag:  [ruby]
     後面傳入的部份是 條件式
     回傳符合條件的元素集合
     select => 條件為真
-<<<<<<< HEAD
     reject => 條件為偽
-=======
-    reject => 條件為偽
->>>>>>> Bulk Update
+
+***
+***
+<br />
+
+### [雜項](#misc) #
+***
+#### Class #
+***
+
+`define_method( :method_name , &method_do )` # dynamically add method 
+
+`extend`    # 把後面呼叫的 module **合併** 進此 class 本身
+
+`include`   # 把後面呼叫的 module **引用** 進此 class 產生的物件
