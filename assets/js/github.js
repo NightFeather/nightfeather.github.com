@@ -28,7 +28,10 @@ objGithubUser = function( userName, target){
     };
     this.loadRepos = function( gotObj ) {
         var pack = document.createDocumentFragment();
-        for (var i = 0; i <= gotObj.data.length-1; i++) {
+//      for (var i = 0; i <= gotObj.data.length-1; i++) {
+        var len = gotObj.data.length-1;
+        len = (len <= 5) ? len : 5;
+        for (var i = 0; i <= len; i++) {
             var temp = document.createElement("li");
             temp.innerHTML = "<a href=" + gotObj.data[i].html_url + " class=\"repo two first\">" + gotObj.data[i].name + "</a>"+
                 "<span class=\"update two last\">" + xmlTime(gotObj.data[i].updated_at) + "</span>";
