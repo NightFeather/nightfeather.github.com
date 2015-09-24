@@ -62,11 +62,7 @@ tag:  [ruby]
 ***
 #### select , reject #
 
-    後面傳入的部份是 條件式
+    依照後面傳入的部份
     回傳符合條件的元素集合
     select => 條件為真
-<<<<<<< HEAD
     reject => 條件為偽
-=======
-    reject => 條件為偽
->>>>>>> Bulk Update
